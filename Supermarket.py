@@ -1,15 +1,17 @@
 import enum
 
+
 class ShoppingCart:
 
-    def add(self, itemName, value, itemUnit):
-        print('added something ' + itemName)
+    def add(self, item_name, value, item_unit):
+        print('added something ' + item_name)
 
-    def calculatePrice(self):
+    def calculate_price(self):
         return 0
 
+
 class ItemUnit(enum.IntEnum):
-    Item = 0
-    Bag = 1
-    Gram = 2
-    Kilogram = 3
+    ITEM = 0
+    BAG = 1
+    GRAM = 2
+    KILOGRAM = 3
